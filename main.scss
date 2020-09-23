@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'Heebo', sans-serif;
+
+  .landinng {
+    min-height: 100vh;
+    background: url("hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0rem 5rem;
+
+    nav {
+      min-height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      #logo {
+        font-family: "Lobster", cursive;
+        font-weight: lighter;
+        font-size: 2rem;
+        color: gray;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+
+        li {
+          padding-left: 10rem;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          color: darkslategray;
+        }
+      }
+    }
+
+    .big-text {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-25%);
+      font-family: "Lobster", cursive;
+      font-size: 5rem;
+      color: rgb(61, 61, 61);
+    }
+  }
+}
+
+.intro {
+  min-width: 100%;
+  min-height: 100%;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro-text {
+    color: rgb(233, 233, 233);
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+
+    .hide {
+      background: black;
+      overflow: hidden;
+
+      .text {
+        transform: translateY(100%);
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  background: #232327;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+}
